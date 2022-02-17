@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&family=Montserrat:wght@100;200;400&family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap');
+
+html{
+    background-color: #244158;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding-top: 30px;
+
+}
+
+ul{
+    display: flex;  
+    list-style-type: none;
+    justify-content: end;
+    margin-right: 100px;
+    gap: 20px;
+}
+
+.comp--header{
+    position: absolute;
+    max-width: 100%;
+    z-index: -2;
+    margin-top: -20px ;
+}
+
+.nav--logo{
+    max-width: 150px;
+    margin-left: 100px;
+}
+
+.nav--link{
+    text-decoration: none;
+    color:black;
+}
+
+.header--headline{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    margin-top: 50px ;
+    margin-left: 300px;
+    font-weight: 400;
+}
+
+.header--link{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+    margin-left:90px ;
+    background-color: #DF3260;
+}
+
+.header--aiweb{
+    position: block;
+    margin-top: -70px;
+    margin-left:50px ;
+    max-width: 400px;
+}
+
+.text{
+    display: grid;
+    grid-template-columns: 600px;
+    justify-content: center;
+    color: white;
+}
+
+.contact{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.contact--form{
+    max-width: 400px;
+    margin-top: 50px;
+}
+
+footer{
+    /*Position relative vai segurar a imagem e o texto dentro do footer*/
+    position: relative;
+    background-color: white;
+}
+
+footer p{
+    /*Com o Position relative no footer, o absolute na tag p vai ser referente ao footer
+    */
+    position: absolute;
+    top: 80%;
+    left: 25%;
+    color: white; 
+}
+
+.comp--footer{
+    max-width: 100%;
+    margin-bottom: -50px;
+}
+
+.footer--logo__end{
+    position: absolute;
+    top: 45%;
+    left: 80%;
+}
+
+.footer--logo{
+    max-width: 150px;
+}
